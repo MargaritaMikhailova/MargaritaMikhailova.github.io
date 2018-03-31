@@ -1,0 +1,270 @@
+body{
+
+	background-color: #f6f6f6;
+	    flex-direction: column;
+}
+
+.wrapper{
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;	
+}
+.content{
+	flex: 1;
+}
+h1{
+width: 378px;
+height: 66px;
+font-size: 35px;
+line-height: 45px;
+color: rgb(65,65,65);
+font-family: 'Fira Sans', sans-serif;
+}
+/*Global end*/
+/*header*/
+
+.header{
+	height: 80px;
+	box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+	background-color: #ffffff;
+}
+
+.logo{
+	height: 80px;
+}
+
+.logo__image{
+	width: 60px;
+	height: 60px;
+	border-radius: 30px;
+	background-color: #f6f6f6;
+	border: 1px solid #d6d6d6;
+	margin-left: 130px;
+	position: absolute;
+	top: 10px;
+}
+
+.logo__text{
+	font-size: 18px;
+	line-height: 28px;
+	color: rgb(65,65,65);
+	font-family: 'Fira Sans', sans-serif;
+	position: absolute;
+	left: 227px;
+	top: 35px;
+}
+.main_menu{
+	font-size: 18px;
+	line-height: 28px;
+	color: #33c1e3;
+	font-family: 'Fira Sans', sans-serif;
+	position: absolute;
+	top: 15px;
+	right: 130px;
+	list-style: none;
+	position: absolute;
+}
+
+.main_menu a{
+	display: block;
+	text-decoration: none;
+	border-bottom: 2px dotted;
+	color: #33c1e3;
+
+}
+
+.main_menu a:hover{
+	color: #e85f61;
+}
+
+.main_menu li{
+	text-decoration: none;
+	list-style: none;
+
+}
+
+
+
+/*header end*/
+
+/*Sidebar*/
+
+.sidebar{
+	width: 15%;
+	float: left;
+	list-style: none;
+	padding-top: 16px;
+	flex: 1;
+	position: fixed;
+	height: 100%;
+	margin: 0 auto;
+	font-family: 'Fira Sans', sans-serif;
+
+}
+
+.side__item{
+	font-size: 18px;
+	line-height: 24px;
+	color: rgb(65,65,65);
+	font-family: 'Fira Sans', sans-serif;
+	text-align: right;
+	text-decoration: none;
+	list-style: none;
+	display: block;
+	text-align: right;
+    display: block;
+    line-height: 45px;
+}
+
+
+.side__item_active {
+    color: #33c1e3;
+    list-style: none;
+    padding-left: 25px;
+    text-decoration: none;
+    padding-right: 10px;
+    font-family: 'Fira Sans', sans-serif;
+	line-height: 24px;
+	text-align: right;
+	font-size: 18px;
+	border-right: 6px solid #32c4e6;
+	text-align: right;
+    display: block;
+    line-height: 45px;
+
+}
+
+/*Sidebar end*/
+
+/*Container*/
+.container{
+    float: left;
+    flex: 1;
+    width: 940px;
+    margin: 0 auto;
+    padding-left: 6%;
+    padding-top: 1%;
+    }
+    
+.content_container{
+
+	display: flex;
+    flex-direction: row;
+   	padding-left: 25%;
+}
+
+.container_foto{
+
+
+
+}
+.foto__about{
+	width: 220px;
+	height: 220px;
+	border-radius: 110px;
+	background-color: #f5f5f5;
+	border: 5px solid #ffffff;
+	float: left; 
+	margin-top: 10%;
+
+}
+
+.container_about{
+	 	
+}
+.about__title{
+	width: 378px;
+height: 66px;
+font-size: 35px;
+line-height: 45px;
+color: rgb(65,65,65);
+font-family: 'Fira Sans', sans-serif;
+padding-left: 45px;
+    padding-top: 10px;
+
+}
+.about__text{
+		 display:inline-block;
+ vertical-align:middle;
+	width: 389px;
+	height: 370px;
+	font-size: 18px;
+	line-height: 26px;
+	color: rgb(100,100,100);
+	font-family: 'Fira Sans', sans-serif;
+	margin-left: 50px;
+	 overflow-x: hidden
+}
+
+.button__about{
+width: 940px;
+}
+
+.about__btn{
+float: right;
+}
+
+.btn--about{
+	width: 160px;
+	height: 40px;
+	border-radius: 20px;
+	border: 2px solid #e85f61;
+	font-size: 14px;
+	line-height: 28px;
+	background-color: #f6f6f6;
+	margin-top: 30px;
+	color: #e85f61;
+	font-family: 'Fira Sans', sans-serif;
+	text-align: center;
+	cursor: pointer;
+	float: right;
+	text-decoration: none;
+}
+
+.btn--about:hover{
+	background:#e85f61;
+	color:#f6f6f6;
+}
+/*Container end*/
+
+/*Footer*/
+.footer{
+	height: 50px;
+	background-color: #414141;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	margin-top: 100px;
+}
+
+
+.footer_section{
+	flex: 2 1 500px;
+    margin-right: 30px;
+}
+.coopyright{
+	margin-left: 130px;
+	color: #727272;
+	flex: 2 1 500px;
+    margin-right: 30px;
+
+}
+
+.social{
+
+	color: #727272;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	vertical-align: middle;
+	text-decoration: none;
+}
+
+.social__box{
+	margin-right: 130px;
+	display: flex;
+    flex-flow: row wrap;
+}
+
+
+/*Footer end*/
