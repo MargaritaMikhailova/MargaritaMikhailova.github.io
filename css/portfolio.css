@@ -46,39 +46,94 @@ body{
 	font-family: 'Fira Sans', sans-serif;
 	position: absolute;
 	left: 227px;
-	top: 35px;
+	top: 30px;
 }
 
-.main_menu{
-	font-size: 18px;
-	line-height: 28px;
+.header__right {
+	display: flex;
+	margin-top: 30px;
+	height: 40px;
+	float: right;
+	margin-right: 130px;
+}
+
+.contacts {
 	color: #33c1e3;
+	border-bottom: 2px dotted #33c1e3;
+	position: relative;
 	font-family: 'Fira Sans', sans-serif;
-	position: absolute;
-	top: 15px;
-	right: 130px;
-	list-style: none;
-	position: absolute;
+	font-weight: 700;
+	height: 20px;
 }
-
-.main_menu a{
-	display: block;
-	text-decoration: none;
-	border-bottom: 2px dotted;
-	color: #33c1e3;
-
-}
-
-.main_menu a:hover{
+.contacts:hover {
 	color: #e85f61;
+	border-color: #e85f61;
+	cursor: pointer; 
 }
 
-.main_menu li{
+.list {
+	width: 200px;
+	padding: 10px;
+	border: 1.5px solid #dedede;
+	border-radius: 9px;
+	background: #ffffff;
+	position: absolute;
+	display: none;
+	justify-content: center;
+	right: -50px;
+	z-index: 100;
+}
+.list__item {
+	padding:10px;
+	align-items: center;
+}
+.list__item a{
 	text-decoration: none;
-	list-style: none;
-
+	font-family: 'Fira Sans', sans-serif;
+	color: #414141;
+	font-weight: 200;
+	
 }
 
+
+.header__right:hover .list {
+	display: block;
+}
+
+.header__right:hover .triangle {
+	display: block;
+}
+
+.triangle {
+	display: none;
+ 	position: absolute;
+ 	width: 0px;
+ 	height: 0px;
+ 	border-top: none;
+ 	border-left: 10px solid transparent;
+ 	border-right: 10px solid transparent;
+ 	border-bottom: 10px solid #dedede;
+ 	right: 50px;
+ 	top: 31px;
+ }
+  .triangle:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: none;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+    top: 2px;
+    left: -10px;
+    z-index: 110; 
+}
+
+.fa-mes, .fa-ph, .fa-sk {
+	color: #33c1e3;
+	padding-right: 5px;
+}
 /*header end*/
 
 /*Sidebar*/
@@ -87,7 +142,7 @@ body{
 	width: 15%;
 	float: left;
 	list-style: none;
-	padding-top: 16px;
+	padding-top: 100px;
 	flex: 1;
 	position: fixed;
 	height: 100%;
@@ -138,11 +193,9 @@ body{
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
-		position: absolute;
-	bottom: 0;
-	width: 100%;
 	margin-top: 100px;
 }
+
 
 .footer_section{
 	flex: 2 1 500px;
@@ -171,9 +224,44 @@ body{
 	display: flex;
     flex-flow: row wrap;
 }
+.facebook a {
+	background: url(../image/FaceBook.png);
+	width: 31px;
+	height: 30px;
+	display: block;
+	margin-right: 3px
+}
+
+.facebook a:hover{
+	background: url(../image/FaceBook_1.png);
+}
+
+.vk a {
+	background: url(../image/vk.png);
+	width: 31px;
+	height: 30px;
+	display: block;
+	margin-right: 3px
+}
+
+.vk a:hover{
+	background: url(../image/vk_1.png)
+}
+.twitter a {
+	background: url(../image/Twitter.png);
+	width: 31px;
+	height: 30px;
+	display: block;
+	margin-right: 3px
+}
+
+.twitter a:hover{
+	background: url(../image/Twitter_1.png);
+}
 
 
 /*Footer end*/
+
 
 /*portfolio*/
 .portfolio__title {
@@ -188,7 +276,7 @@ font-family: 'Fira Sans', sans-serif;
 	text-decoration: none;
 }
 .container_portfolio{
-padding-left: 25%;
+padding-left: 10%;
 
 }
 .container_portfolio h1{
@@ -242,10 +330,10 @@ color: #727272;
 font-family: 'Fira Sans', sans-serif;
 }
 .portfolio_group{
-	display: flex;
+display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-align-items: ;
+
 }
 .portfolio_img{
 width: 220px;
@@ -254,5 +342,26 @@ border-radius: 10px 10px 0 0;
 
 }
 
-
 /*portfolio end*/
+
+@media only screen and (max-width: 1000px) {
+
+        nav {  width: 100%; 
+    }
+    	.block { width: 35%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+
+.block {
+
+       float:none;
+
+       width:85%;
+
+       margin: 1em auto;
+
+        }
+
+} 
